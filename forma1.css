@@ -1,0 +1,289 @@
+*{
+margin:0;
+padding:0;
+}
+
+h1{
+padding:3%;
+width:auto;
+margin:2%;
+height:auto;
+border: thick solid ?;
+text-align:center;
+text-shadow: blue 5px 5px 6px;
+color:white;
+border-left:11px solid yellow;
+background:-webkit-gradient(linear, 0 0, 0 100%, from(maroon), to(green));
+box-shadow:0 0 10px 5px black, -20px 0px 50px orange;
+}
+
+h2 img{
+padding:2%;
+width:auto;
+margin:1%;
+height:auto;
+align:center;
+}
+h2{
+text-align:center;
+color:rgb(64,0,64);
+}
+h3{
+text-align:center;
+color:white;
+}
+
+img{
+ width:100%;
+ height:auto;
+ margin:2%;
+padding:5%;
+ align:center;
+border-radius:10px;
+}
+.contenedor img{
+width:100%;
+height:auto;
+margin:1%;
+border-radius:10px;
+}
+
+.contenedor{
+margin:1%;
+border: thick solid #;
+padding:5px;
+width: auto;
+height:auto;
+display: block;
+border-radius:20px;
+box-shadow:black;
+text-align:center;
+overflow: hidden;
+background:rgb(235,255,255);
+}
+
+.contenedor2{
+margin:1%;
+border: thick solid #001;
+padding:5px;
+width: auto;
+height:auto;
+display: block;
+border-radius:20px;
+box-shadow: 12px 12px 15px #000;
+text-align:center;
+overflow: hidden;
+background:rgb(1,225,7); 
+}
+.contenedor2 img{
+width:100%;
+height:auto;
+margin:1%;
+border-radius:10px;
+}
+#superarse{
+margin:1%;
+border: thick solid #;
+padding:10px;
+width: auto;
+height:auto;
+display: block;
+border-radius:10px;
+box-shadow: 12px 12px 15px #000;
+text-align:center;
+text-color:black;
+overflow: hidden;
+background: url(imagenes/fondo.jpg)top center no-repeat;
+}
+.superarse img{
+width:30%;
+height:auto;
+margin:#;
+border-radius:50%;
+overflow: hidden;
+float: left;
+
+}
+
+
+
+/*fotos cambiantes*/
+#deslisar{
+width:auto;
+margin:1%;
+padding:5%;
+overflow:hidden;
+border-bottom:15px solid #000;
+}
+#deslisar ul{
+display:flex;
+padding:0;
+width:400%;
+animation: cambio 25s infinite alternate linear;
+}
+ 
+#deslisar li{
+width:400%;
+list style:none;
+}
+
+
+#deslisar img{
+width:100%;}
+
+
+@keyframes cambio{
+0%{margin-left:0;}
+20%{margin-left:0;}
+25%{margin-left:-100%;}
+45%{margin-left:-100%;}
+50%{margin-left:-200%;}
+70%{margin-left:-200%;}
+75%{margin-left:-300%;}
+100%{margin-left:-300%;}
+}
+
+#ejercicios{
+margin:1%;
+border: thick solid #561;
+padding:5px;
+width: auto;
+height:auto;
+display: block;
+border-radius:20px;
+box-shadow: 12px 12px 15px #000;
+text-align:center;
+overflow: hidden;
+background: url(fondo1.jpg)top center no-repeat;
+}
+table{
+font-family:"Lucida Sans Unicode", "Lucida Grande", Sans Serif;
+font-size:50%;
+margin:0;
+width:100%;
+height:auto;
+border-radius:10px;
+box-shadow: 10px 10px 10px #100;
+align:center;
+overflow: hidden;
+background:#150;
+text-align:center;
+border-collapse.collapse;
+}
+
+th{
+height:auto;
+padding:0;
+background:#b9ceff;
+border-top:10px solid #aaccfe;
+border-bottom:5px solid yellow;
+color: black;
+}
+
+td{
+
+padding:auto;
+background:#e8bbfe;
+border-bottom:1px solid #fff;
+color:black;
+border-top:1px solid transparent;
+border-left:2px solid green;
+}
+/*producimos un acercamiento a los cubos de la tabla*/
+td:hover,td:focus{
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+
+
+/*las notas didacticas*/
+ol,li{
+ list-style:none;
+ text-align: center;
+ margin:1%;
+}
+
+ol{
+ overflow:hidden; 
+   padding:1em;
+}
+
+ol li{
+ margin:1%;
+ float:left;
+}
+ol li h2{
+ font-size:85%;
+ font-weight:bold;
+ padding:111px;
+}
+ol li p{
+ font-family:"Reenie Beanie", arial, sans-serif;
+ font-size:80%;
+width:100%;
+ color: #114; 
+ height: auto;
+padding:0.1%;
+margin:1px;
+}
+/*le colocamos sombra a las notas*/
+ol li a{
+ text-decoration:none;
+ background:rgb(217,179,179);
+ display:block;
+ height:10em;
+ width:10em;
+ border-radius: 20px;
+ padding:15px;
+ -webkit-box-shadow:5px 5px 5px 7px rgba(33,33,33,7);
+}
+
+/*rotamos los box ligeramente*/
+ol li a{
+-webkit-transform:rotate(-6deg);
+-o-transform:rotate(-6deg);
+-moz-transform:rotate(-6deg);
+}
+
+ol li:nth-child(even) a{
+-o-transform:rotate(4deg);
+-webkit-transform:rotate(4deg);
+-moz-transform:rotate(4deg);
+position:relative;
+top:5px;
+}
+
+ol li:nth-child(3n) a{
+-o-transform:rotate(-3deg);
+-webkit-transform:rotate(-3deg);
+-moz-transform:rotate(-3deg);
+position:relative;
+top:-5px;
+}
+
+ol li:nth-child(5n) a{
+-o-transform:rotate(5deg);
+-webkit-transform:rotate(5deg);
+-moz-transform:rotate(5deg);
+position:relative;
+top:-10px;
+}
+/*produce un acercamiento al pasar sobre los box*/
+ol li a:hover,ol li a:focus{
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+
+
